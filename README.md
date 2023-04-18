@@ -47,4 +47,4 @@ The courier will not be able to go until he is assigned a destination.
 
 ![alt text](scrennshots/courierMap1.png)
 ![alt text](scrennshots/courierMap2.png)
-![alt text](scrennshots/courierMapArrived.png)
+![alt text](scrennshots/courierMapUnload.png)
