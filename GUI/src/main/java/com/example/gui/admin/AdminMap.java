@@ -28,7 +28,7 @@ public class AdminMap {
 
     @FXML
     void initialize() {
-        backBtn.setOnAction(actionEvent -> HelloApplication.changeScreen(backBtn, "admin-city-menu.fxml"));
+        backBtn.setOnAction(actionEvent -> HelloApplication.changeScreen(backBtn, "admin-country-menu.fxml"));
         showCities();
         showCouriers();
     }
