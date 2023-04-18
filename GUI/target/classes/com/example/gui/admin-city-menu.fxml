@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefWidth="1320.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.admin.AdminCityInfo">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="720.0" prefWidth="1283.0" style="-fx-background-color: #2E3348;">
+      <children>
+         <AnchorPane prefHeight="171.0" prefWidth="1280.0" style="-fx-background-color: #FAD02C;">
+            <children>
+               <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="96.0" text="Back">
+                  <font>
+                     <Font size="19.0" />
+                  </font>
+               </Button>
+               <Label fx:id="cityMenuLabel" alignment="CENTER" layoutX="176.0" layoutY="56.0" prefHeight="59.0" prefWidth="929.0" text="City">
+                  <font>
+                     <Font name="SansSerif Regular" size="52.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+         <Label alignment="CENTER" layoutX="14.0" layoutY="198.0" prefHeight="49.0" prefWidth="268.0" text="Parcels to be sent." textFill="WHITE">
+            <font>
+               <Font size="33.0" />
+            </font>
+         </Label>
+         <Button fx:id="addButton" layoutX="148.0" layoutY="652.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="186.0" text="Add parcel">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Button>
+         <Label alignment="CENTER" layoutX="784.0" layoutY="198.0" prefHeight="49.0" prefWidth="301.0" text="Parcels to be issued." textFill="WHITE">
+            <font>
+               <Font size="33.0" />
+            </font>
+         </Label>
+         <TextField fx:id="findParcelText" alignment="CENTER" layoutX="1055.0" layoutY="612.0" prefHeight="40.0" prefWidth="203.0" promptText="Parcel code">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </TextField>
+         <Button fx:id="findParcelButton" layoutX="1055.0" layoutY="657.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="203.0" text="Find">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton2" layoutX="1213.0" layoutY="270.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton1" layoutX="961.0" layoutY="270.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton3" layoutX="961.0" layoutY="328.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton5" layoutX="961.0" layoutY="385.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton7" layoutX="962.0" layoutY="441.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton9" layoutX="962.0" layoutY="500.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton4" layoutX="1213.0" layoutY="328.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton6" layoutX="1213.0" layoutY="385.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton8" layoutX="1213.0" layoutY="441.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <Button fx:id="issuedParcelButton10" layoutX="1213.0" layoutY="500.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" text="✔">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Button>
+         <TextField fx:id="addWeightText" alignment="CENTER" layoutX="239.0" layoutY="588.0" prefHeight="49.0" prefWidth="186.0" promptText="Weight(kg)">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </TextField>
+         <Label fx:id="sentName1" alignment="CENTER" layoutX="14.0" layoutY="271.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentLocation1" alignment="CENTER" layoutX="193.0" layoutY="271.0" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentWeight1" alignment="CENTER" layoutX="365.0" layoutY="270.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentName2" alignment="CENTER" layoutX="14.0" layoutY="329.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentName3" alignment="CENTER" layoutX="13.0" layoutY="387.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentName4" alignment="CENTER" layoutX="14.0" layoutY="442.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentName5" alignment="CENTER" layoutX="14.0" layoutY="501.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentLocation2" alignment="CENTER" layoutX="193.0" layoutY="328.0" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentLocation3" alignment="CENTER" layoutX="193.0" layoutY="387.0" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentLocation4" alignment="CENTER" layoutX="193.0" layoutY="442.0" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentLocation5" alignment="CENTER" layoutX="193.0" layoutY="501.0" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentWeight2" alignment="CENTER" layoutX="366.0" layoutY="327.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentWeight3" alignment="CENTER" layoutX="365.0" layoutY="387.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentWeight4" alignment="CENTER" layoutX="366.0" layoutY="442.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="sentWeight5" alignment="CENTER" layoutX="365.0" layoutY="500.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Button fx:id="sendParcel" layoutX="465.0" layoutY="651.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" text="Send">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Button>
+         <Label fx:id="sentTotal" layoutX="294.0" layoutY="198.0" prefHeight="49.0" prefWidth="219.0" text="Total: 0" textFill="WHITE">
+            <font>
+               <Font size="33.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedTotal" layoutX="1102.0" layoutY="198.0" prefHeight="49.0" prefWidth="178.0" text="Total: 0" textFill="WHITE">
+            <font>
+               <Font size="33.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName1" alignment="CENTER" layoutX="784.0" layoutY="271.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName2" alignment="CENTER" layoutX="1035.0" layoutY="272.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName3" alignment="CENTER" layoutX="784.0" layoutY="329.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName4" alignment="CENTER" layoutX="1035.0" layoutY="329.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName5" alignment="CENTER" layoutX="784.0" layoutY="386.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName6" alignment="CENTER" layoutX="1035.0" layoutY="386.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName7" alignment="CENTER" layoutX="784.0" layoutY="443.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName8" alignment="CENTER" layoutX="1035.0" layoutY="443.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName9" alignment="CENTER" layoutX="784.0" layoutY="502.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <Label fx:id="issuedParcelName10" alignment="CENTER" layoutX="1035.0" layoutY="501.0" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #FAFAFA;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <ChoiceBox fx:id="availableCouriers" layoutX="465.0" layoutY="588.0" prefHeight="49.0" prefWidth="150.0" />
+         <RadioButton fx:id="radio5" layoutX="473.0" layoutY="501.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="28.0" text="4">
+            <font>
+               <Font size="19.0" />
+            </font>
+            <toggleGroup>
+               <ToggleGroup fx:id="parcelSelect" />
+            </toggleGroup>
+         </RadioButton>
+         <RadioButton fx:id="radio4" layoutX="473.0" layoutY="442.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="28.0" text="3" toggleGroup="$parcelSelect">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </RadioButton>
+         <RadioButton fx:id="radio3" layoutX="473.0" layoutY="386.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="28.0" text="2" toggleGroup="$parcelSelect">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </RadioButton>
+         <RadioButton fx:id="radio2" layoutX="473.0" layoutY="328.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="28.0" text="1" toggleGroup="$parcelSelect">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </RadioButton>
+         <RadioButton fx:id="radio1" layoutX="473.0" layoutY="269.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="28.0" selected="true" text="0" toggleGroup="$parcelSelect">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </RadioButton>
+         <ChoiceBox fx:id="addToSelection" layoutX="44.0" layoutY="590.0" prefHeight="45.0" prefWidth="186.0" />
+      </children>
+   </AnchorPane>
+</VBox>
