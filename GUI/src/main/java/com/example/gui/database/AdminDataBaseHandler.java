@@ -476,10 +476,13 @@ public class AdminDataBaseHandler {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if (resultSet.next()) {
-                if (resultSet.getString(CourierTable.destination) == null) {
+                String destination = resultSet.getString(CourierTable.destination);
+                if (destination == null) {
                     return resultSet.getString(CityTable.name);
                 } else {
-                    return "Arrived in " + resultSet.getString(CityTable.name);
+                    if (destination.equals(resultSet.getString(CityTable.name))) {
+                        return "Arrived in " + resultSet.getString(CityTable.name);
+                    }
                 }
             }
 
